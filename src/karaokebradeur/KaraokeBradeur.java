@@ -28,9 +28,9 @@ public class KaraokeBradeur {
         
         System.out.println("Karaoke Syariah Haiyuuu");
         System.out.println("1. Room Small Hanya Rp55.000/jam");
-        System.out.println("2. Room Small Hanya Rp70.000/jam");
-        System.out.println("3. Room Small Hanya Rp120.000/jam");
-        System.out.println("4. Room Small Hanya Rp150.000/jam");
+        System.out.println("2. Room Medium Hanya Rp70.000/jam");
+        System.out.println("3. Room Large Hanya Rp120.000/jam");
+        System.out.println("4. Family Room Hanya Rp150.000/jam");
         System.out.println("ADA INFO EVENT 11.11 NIH, ADA DISKON 11.11% BUAT QM YANG BOOKING 3 JAM ATAU LEBIH MWEHEHE");
         System.out.println("Haiyu atu Booking (y/t):");
         String pil = sc.nextLine();
@@ -64,6 +64,8 @@ public class KaraokeBradeur {
                     System.out.println("Aku Lupa Tanya Sapa Nama qm :(");
                     System.out.println("Nama Kamu :");
                     String nama = sc.next();
+                    if(nama.isEmpty()){}
+                    else{
                     System.out.println("==============================");
                     System.out.println("Ahayy qm udah booking nich");  
                     System.out.println("CIEEE DAPET DISKON 11.11%");  
@@ -73,7 +75,8 @@ public class KaraokeBradeur {
                     System.out.println("3. Lama Booking : "+lama);
                     Integer total1 = 55000*lama;
                     double dsj = total1-disk1;
-                    System.out.println("4. Total : Rp."+dsj);
+                    System.out.println("4. Total : Rp."+dsj);    
+                    JOptionPane.showConfirmDialog(null, "dsfjhkf");}               
                 }
                 
             }
